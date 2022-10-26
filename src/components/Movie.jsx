@@ -1,6 +1,5 @@
 function Movie(props) {
     const {
-        key,
         Title,
         Year, 
         imdbId,
@@ -13,8 +12,8 @@ function Movie(props) {
             {
                 Poster === 'N/A' ?
                 <img className="activator" src={`https://via.placeholder.com/300x500?text=${Title}.com+Now
-                C/O https://placeholder.com/#How_To_Set_Custom_Text`}/> :
-                <img className="activator" src={Poster}/>
+                C/O https://placeholder.com/#How_To_Set_Custom_Text`} alt=""/> :
+                <img className="activator" src={Poster} alt=""/>
             }
         </div>
         <div className="card-content">
